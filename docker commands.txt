@@ -1,0 +1,22 @@
+    1  systemctl status docker
+    2  docker run hello-world
+    3  docker images
+    4  docker ps
+    5  docker ps -a
+    6  clear
+    7  docker run --name web01 -d -p 9080:80 nginx
+    8  docker ps
+    9  docker inspect web01
+   10  curl http://172.17.0.2:80
+   11  ip addr show
+   12  clear
+   13  mkdir images
+   14  cd images/
+   15  vim Dockerfile
+   16  docker build -t tesimg .
+   17  clear
+   18  docker images
+   19  docker run -d -P tesimg
+   20  docker ps
+   21  ip addr show
+   22  history
